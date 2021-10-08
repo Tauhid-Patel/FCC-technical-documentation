@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Technical Documentation</title>
+</head>
+<body>
+<main id="main-doc">
+  <nav id="navbar">
+    <header>threejs docs</header>
+    <ul>
+      <li><a class="nav-link" href="#First_section">Creating a scene</a></li>
+      <li><a class="nav-link" href="#Second_section">WebGL Support</a></li>
+      <li><a class="nav-link" href="#Third_section">Testing with NPM</a></li>
+      <li><a class="nav-link" href="#Fourth_section">Camera</a></li>
+      <li><a class="nav-link" href="#Fifth_section">Geometry</a></li>
+    </ul>
+  </nav>
+  <div class="content">
+  <section id="First_section" class="main-section">
+    <header>Creating a scene</header>
+    <p>
+      <code>Before we start</code>
+      To actually be able to display anything with three.js, we need three things: scene, camera and renderer, so that we can render the scene with camera.
+      </p>
+    
+     <ul>
+      <li>Installation</li>
+      <li>How to run things locally</li>
+      <li>Drawing lines</li>
+      <li>Creating text</li>
+      <li>Loading 3D models</li>
+    </ul>
+    
+    <p>
+      <code>How to get started</code>
+      Let's take a moment to explain what's going on here. We have now set up the scene, our camera and the renderer.
+
+      There are a few different cameras in three.js. For now, let's use a PerspectiveCamera.
+      
+      The first attribute is the field of view. FOV is the extent of the scene that is seen on the display at any given moment. The value is in degrees.
+      
+      The second one is the aspect ratio. You almost always want to use the width of the element divided by the height, or you'll get the same result as when you play old movies on a widescreen TV - the image looks squished.
+    </p>
+    
+  </section>
+  <section id="Second_section" class="main-section">
+    <header>WebGL Compatibility</header>
+    <p>
+      <code>Compatible with your system</code>
+      Even though this is becoming less and less of a problem, some devices or browsers may still not support WebGL. The following method allows you to check if it is supported and display a message to the user if it is not.
+    <p>
+      <code>check your device dumbo</code>
+      If you use just procedural geometries and don't load any textures, webpages should work straight from the file system, just double-click on HTML file in a file manager and it should appear working in the browser (you'll see file:///yourFile.html in the address bar).
+    </p>
+     <ul>
+      <li>First list</li>
+      <li>Second list</li>
+      <li>Third list</li>
+      <li>Fourth list</li>
+      <li>Fifth list</li>
+      <li>Hello World</li>
+    </ul>
+  </section>
+  <section id="Third_section" class="main-section">
+    <header>Testing with NPM</header>
+    <p>
+      <code>package management tools</code>
+      This article shows how to get three.js into a node.js environment so that you can execute automated tests. Tests can be run on the command line, or by automated CI tools like Travis.
+    </p>
+    <p>
+      <code>running with server</code>
+      This article shows how to get three.js into a node.js environment so that you can execute automated tests. Tests can be run on the command line, or by automated CI tools like Travis.
+    </p>
+    <p>
+      lorem lorem dog paragraph lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      <code>this is lorem dog</code>
+      This article shows how to get three.js into a node.js environment so that you can execute automated tests. Tests can be run on the command line, or by automated CI tools like Travis.
+    </p>
+  </section>
+  <section id="Fourth_section" class="main-section">
+    <header>Camera</header>
+    <p>
+      Abstract base class for cameras. This class should always be inherited when you build a new camera.
+    </p>
+     <ul>
+      <li>ArrayCamera</li>
+      <li>CubeCamera</li>
+      <li>OrthographicCamera</li>
+      <li>PerspectiveCamera</li>
+      <li>StereoCamera</li>
+    </ul>
+    <p>
+      axtion paragraph lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+     
+  </section>
+  <section id="Fifth_section" class="main-section">
+    <header>Geometry</header>
+    <p>
+      Simple shape of Euclidean geometry. It is contructed from a number of triangular segments that are oriented around a central point and extend as far out as a given radius. It is built counter-clockwise from a start angle and a given central angle. It can also be used to create regular polygons, where the number of segments determines the number of sides.
+    </p>
+    <p>Creates a new Camera. Note that this class is not intended to be called directly; you probably want a PerspectiveCamera or OrthographicCamera instead.aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum </p>
+     <ol>
+      <li>BoxGeometry</li>
+      <li>CircleGeometry</li>
+      <li>CylinderGeometry</li>
+      <li>ConeGeometry</li>
+      <li>EdgesGeometry</li>
+    </ol>
+    <p>
+      BoxGeometry is a geometry class for a rectangular cuboid with a given 'width', 'height', and 'depth'. On creation, the cuboid is centred on the origin, with each edge parallel to one of the axes.
+    </p>
+  </section>
+ </div>
+</main>
+</body>
+</html>
